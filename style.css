@@ -1,0 +1,32 @@
+:root{--bg:#e9eeec;--surface:#fbfcfb;--ink:#12302a;--mute:#5b6f69;--brass:#a97a2c;--line:#c5d0cc;--btn:#12302a;--btnt:#fbfcfb}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1f1b;--surface:#183029;--ink:#eef3f1;--mute:#9db3ac;--brass:#d9a955;--line:#2c4a41;--btn:#d9a955;--btnt:#10201b}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Figtree,system-ui,sans-serif}
+main{max-width:520px;margin:0 auto;padding:24px 16px 48px}
+h1{font:400 2.4rem/1.1 "Young Serif",Georgia,serif;margin:12px 0 8px}
+h2{font:400 1.25rem/1.2 "Young Serif",Georgia,serif;margin:28px 0 12px}
+a{color:var(--ink)}.mute{color:var(--mute)}.small{font-size:.9rem}
+.facts{display:grid;gap:4px;margin:14px 0}
+.ticket{display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--brass);border-radius:14px;padding:16px 18px;margin:12px 0;text-decoration:none;color:var(--ink)}
+.ticket b{display:block}.price{margin-left:auto;font-weight:600}
+.buy{background:var(--btn);color:var(--btnt);padding:10px 16px;border-radius:10px;font-weight:600}
+.off{opacity:.6}
+:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
+
+/* ---- hero + gallery ---- */
+.hero{position:relative;max-width:760px;margin:0 auto;min-height:420px;display:flex;align-items:flex-end;color:#fff;
+ background:linear-gradient(to top,rgba(10,22,18,.92) 8%,rgba(10,22,18,.45) 55%,rgba(10,22,18,.25)),url("images/pour.jpg") center 30%/cover no-repeat;
+ border-radius:0 0 22px 22px}
+.hero-in{padding:28px 20px 26px;width:100%}
+.hero h1{color:#fff;font-size:2.6rem;margin:6px 0 8px}
+.hero p{margin:0 0 6px;color:#e8efec}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.78rem;color:#e2b869!important}
+.hero .facts{margin:12px 0 18px;color:#fff}
+.hero .facts b{color:#e2b869;margin-right:6px}
+.cta{display:inline-block;background:#d9a955;color:#10201b;font-weight:600;text-decoration:none;padding:13px 22px;border-radius:12px}
+.story{margin-top:8px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.duo img{width:100%;height:190px;object-fit:cover;border-radius:14px;display:block}
+@media (min-width:600px){.hero{min-height:500px;border-radius:0 0 28px 28px}.duo img{height:240px}}
+html{scroll-behavior:smooth}
+.banner{width:100%;height:200px;object-fit:cover;border-radius:14px;display:block;margin:0 0 16px}

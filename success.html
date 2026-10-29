@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payment received</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css"></head>
+<body><main>
+  <img class="banner" src="images/table.jpg" alt="Elegant dinner table setting">
+  <h1>You’re in.</h1>
+  <p>Your payment was received. A receipt is on its way to your email.</p>
+  <p>Your ticket image will be sent to your WhatsApp number. If you don’t get it within a day, message us.</p>
+  <p><a class="ticket tier" id="wa" href="#"><span><b>Message us on WhatsApp</b></span><span class="buy">Open</span></a></p>
+  <p><a href="index.html">Back to tickets</a></p>
+</main>
+<script src="config.js"></script>
+<script>
+  const E = window.EVENT;
+  document.getElementById("wa").href = "https://wa.me/" + E.whatsapp + "?text=" + encodeURIComponent("Hi, I just paid for the " + E.name + ". Please send my ticket.");
+</script>
+<!-- TODO: in Paystack, set the Payment Page "Redirect URL" to https://YOUR-SITE/success.html -->
+</body></html>
