@@ -31,7 +31,7 @@ function parseCSV(t){const rows=[];let r=[],c="",q=false;for(let i=0;i<t.length;
   else if(ch=="\n"||ch=="\r"){if(ch=="\r"&&t[i+1]=="\n")i++;r.push(c);c="";if(r.some(x=>x.trim()))rows.push(r);r=[]}
   else c+=ch}
   r.push(c);if(r.some(x=>x.trim()))rows.push(r);return rows}
-// TODO: if your Paystack export uses different column titles, edit these words (lowercase, partial match is fine)
+
 const COLS={name:["customer name","name"],phone:["whatsapp","phone","mobile"],ref:["reference"],amount:["amount"],status:["status"],ticket:["ticket","plan","type"]};
 function find(h,words){for(const w of words){const i=h.findIndex(x=>x.toLowerCase().includes(w));if(i>-1)return i}return -1}
 function waNumber(p){let d=String(p||"").replace(/\D/g,"");if(d.startsWith("0"))d="233"+d.slice(1);return d}
