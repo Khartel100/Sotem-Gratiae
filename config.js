@@ -1,7 +1,7 @@
 window.EVENT = {
   
   name: "Sotem Gratiae",
-  tagline: "A night of Awards.",
+  tagline: "A night of Dinner and Awards.",
   date: "Saturday, December 12, 5:00 PM",
   venue: "GEC Miracle Center",
   contactPhone: "+233 54 808 1714",     
