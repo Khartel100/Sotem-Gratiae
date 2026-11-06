@@ -9,8 +9,8 @@ window.EVENT = {
   whatsapp: "233548081714",          
 
   tickets: [
-    { name: "Singles",     note: "Shared tables",            price: 5, payLink: "https://paystack.shop/pay/-iy8bccl7u" },
-    { name: "Couples", note: "Front seats, wine pairing", price: 3, payLink: "https://paystack.shop/pay/pzyz-ubkx3" }
+    { name: "Singles",     note: "Shared tables",            price: 120, payLink: "https://paystack.shop/pay/-iy8bccl7u" },
+    { name: "Couples", note: "Front seats, wine pairing", price: 200, payLink: "https://paystack.shop/pay/pzyz-ubkx3" }
   ],
   currency: "GH₵"
 };
